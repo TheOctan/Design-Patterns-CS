@@ -14,7 +14,29 @@
 > Когда существует один объект, рассылающий сообщения, и множество подписчиков, которые получают сообщения. При этом точное число подписчиков заранее неизвестно и процессе работы программы может изменяться.
 
 ## Example
+```csharp
+class Program
+{
+	static void Main(string[] args)
+	{
+		NewsAgregator newsAgregator = new NewsAgregator();
+		Reader steve = new Reader("Steve");
+		Reader bill = new Reader("Bill");
 
+		IDisposable steveSubscription = newsAgregator.Subscribe(steve);
+		IDisposable billSubscription = newsAgregator.Subscribe(bill);
+
+		News news1 = new News("Title1", "Content1");
+		News news2 = new News("Title2", "Content2");
+
+		newsAgregator.Notify(news1);
+		steveSubscription.Dispose();
+
+		newsAgregator.Notify(news2);
+		billSubscription.Dispose();
+	}
+}
+```
 ### Observer
 ```csharp
 public class Reader : IObserver<News>
@@ -28,7 +50,7 @@ public class Reader : IObserver<News>
 
 	public void OnNext(News value)
 	{
-		Console.WriteLine($"{value.Title} : {value.Content}");
+		Console.WriteLine($"{Name} read {value.Title} : {value.Content}");
 	}
 
 	public void OnError(Exception error)
