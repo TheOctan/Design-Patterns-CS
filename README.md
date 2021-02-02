@@ -51,7 +51,7 @@
 [Iterator]: https://github.com/TheOctan/
 [Mediator]: https://github.com/TheOctan/
 [Memento]: https://github.com/TheOctan/
-[Observer]: https://github.com/TheOctan/
+[Observer]: https://github.com/TheOctan/Design-Patterns-CS/blob/master/Behavioral%20Patterns/Observer/README.md
 [State]: https://github.com/TheOctan/
 [Strategy]: https://github.com/TheOctan/
 [Template Method]: https://github.com/
