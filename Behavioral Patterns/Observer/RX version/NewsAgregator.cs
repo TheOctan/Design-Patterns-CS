@@ -15,21 +15,18 @@ namespace Observer
 			observers = new List<IObserver<News>>();
 		}
 
-		public void Subscribe(IObserver<News> observer)
+		public IDisposable Subscribe(IObserver<News> observer)
 		{
 			observers.Add(observer);
+
+			return new Unsubscriber<News>(observers, observer);
 		}
 
-		public void Unsubscribe(IObserver<News> observer)
-		{
-			observers.Remove(observer);
-		}
-
-		public void Notify(News data)
+		public void Notify(News news)
 		{
 			foreach (IObserver<News> observer in observers)
 			{
-				observer.OnNext(data);
+				observer.OnNext(news);
 			}
 		}
 	}

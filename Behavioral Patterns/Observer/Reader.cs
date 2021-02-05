@@ -14,21 +14,10 @@ namespace Observer
 		{
 			Name = name;
 		}
-		public void OnNext(News value)
-		{
-			Console.WriteLine($"{Name} read {value.Title} : {value.Content}");
-		}
 
-		public void OnCompleted()
+		public void Update(News data)
 		{
-			
+			Console.WriteLine($"{Name} read {data.Title} : {data.Content}");
 		}
-
-		public void OnError(Exception error)
-		{
-			Console.ForegroundColor = ConsoleColor.DarkRed;
-			Console.WriteLine(error.Message);
-			Console.ResetColor();
-		}		
 	}
 }

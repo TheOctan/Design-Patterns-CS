@@ -14,17 +14,17 @@ namespace Observer
 			Reader steve = new Reader("Steve");
 			Reader bill = new Reader("Bill");
 
-			newsAgregator.Subscribe(steve);
-			newsAgregator.Subscribe(bill);
+			IDisposable steveSubscription = newsAgregator.Subscribe(steve);
+			IDisposable billSubscription = newsAgregator.Subscribe(bill);
 
 			News news1 = new News("Title1", "Content1");
 			News news2 = new News("Title2", "Content2");
 
 			newsAgregator.Notify(news1);
-			newsAgregator.Unsubscribe(steve);
+			steveSubscription.Dispose();
 
 			newsAgregator.Notify(news2);
-			newsAgregator.Unsubscribe(bill);
+			billSubscription.Dispose();
 		}
 	}
 }
