@@ -28,31 +28,31 @@
 * ([Template Method]) Шаблонный метод - определяет шаги алгоритма, позволяя подклассам изменить некоторые из них
 * ([Visitor]) Посетитель - определяет новую операцию в классе без его изменения
 
-[Порождающие паттерны]: https://github.com/TheOctan/
-[Структурные паттерны]: https://github.com/TheOctan/
-[Паттерны поведения]: https://github.com/TheOctan/
+<!-- [Порождающие паттерны]: https://github.com/TheOctan/ -->
+<!-- [Структурные паттерны]: https://github.com/TheOctan/ -->
+<!-- [Паттерны поведения]: https://github.com/TheOctan/ -->
 
-[Abstract Factory]: https://github.com/TheOctan/
-[Builder]: https://github.com/TheOctan/
-[Factory Method]: https://github.com/TheOctan/
-[Object Pool]: https://github.com/TheOctan/
-[Prototype]: https://github.com/TheOctan/
-[Singleton]: https://github.com/TheOctan/
-[Adapter]: https://github.com/TheOctan/
-[Bridge]: https://github.com/TheOctan/
-[Composite]: https://github.com/TheOctan/
-[Decorator]: https://github.com/TheOctan/
-[Facade]: https://github.com/TheOctan/
-[Flyweight]: https://github.com/TheOctan/
-[Proxy]: https://github.com/TheOctan/
-[Chain of Responsibility]: https://github.com/TheOctan/
-[Command]: https://github.com/TheOctan/
-[Interpreter]: https://github.com/TheOctan/
-[Iterator]: https://github.com/TheOctan/
-[Mediator]: https://github.com/TheOctan/
-[Memento]: https://github.com/TheOctan/
+<!-- [Abstract Factory]: https://github.com/TheOctan/ -->
+<!-- [Builder]: https://github.com/TheOctan/ -->
+<!-- [Factory Method]: https://github.com/TheOctan/ -->
+<!-- [Object Pool]: https://github.com/TheOctan/ -->
+<!-- [Prototype]: https://github.com/TheOctan/ -->
+<!-- [Singleton]: https://github.com/TheOctan/ -->
+<!-- [Adapter]: https://github.com/TheOctan/ -->
+<!-- [Bridge]: https://github.com/TheOctan/ -->
+<!-- [Composite]: https://github.com/TheOctan/ -->
+<!-- [Decorator]: https://github.com/TheOctan/ -->
+<!-- [Facade]: https://github.com/TheOctan/ -->
+<!-- [Flyweight]: https://github.com/TheOctan/ -->
+<!-- [Proxy]: https://github.com/TheOctan/ -->
+<!-- [Chain of Responsibility]: https://github.com/TheOctan/ -->
+<!-- [Command]: https://github.com/TheOctan/ -->
+<!-- [Interpreter]: https://github.com/TheOctan/ -->
+<!-- [Iterator]: https://github.com/TheOctan/ -->
+<!-- [Mediator]: https://github.com/TheOctan/ -->
+<!-- [Memento]: https://github.com/TheOctan/ -->
 [Observer]: https://github.com/TheOctan/Design-Patterns-CS/blob/master/Behavioral%20Patterns/Observer/README.md
-[State]: https://github.com/TheOctan/
-[Strategy]: https://github.com/TheOctan/
-[Template Method]: https://github.com/
-[Visitor]: https://github.com/TheOctan/
+<!-- [State]: https://github.com/TheOctan/ -->
+<!-- [Strategy]: https://github.com/TheOctan/ -->
+<!-- [Template Method]: https://github.com/ -->
+<!-- [Visitor]: https://github.com/TheOctan/ -->
