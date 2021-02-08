@@ -20,7 +20,7 @@ class Program
 	static void Main(string[] args)
 	{
 		LogSystem logger = new LogSystem();
-		logger.printer = new ConsolePrinter();
+		logger.Printer = new ConsolePrinter();
 
 		logger.Log("Hello Wolrd");
 	}
@@ -31,7 +31,7 @@ class Program
 ```csharp
 public class LogSystem
 {
-	private IPrinter printer;
+	public IPrinter Printer { get; set; }
 
 	public void Log(string message)
 	{
