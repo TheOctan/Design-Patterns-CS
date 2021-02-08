@@ -51,8 +51,8 @@
 <!-- [Iterator]: https://github.com/TheOctan/ -->
 <!-- [Mediator]: https://github.com/TheOctan/ -->
 <!-- [Memento]: https://github.com/TheOctan/ -->
-[Observer]: https://github.com/TheOctan/Design-Patterns-CS/blob/master/Behavioral%20Patterns/Observer/README.md
+[Observer]: https://github.com/TheOctan/Design-Patterns-CS/tree/master/Behavioral%20Patterns/Observer
 <!-- [State]: https://github.com/TheOctan/ -->
-<!-- [Strategy]: https://github.com/TheOctan/ -->
+[Strategy]: https://github.com/TheOctan/Design-Patterns-CS/tree/master/Behavioral%20Patterns/Strategy
 <!-- [Template Method]: https://github.com/ -->
 <!-- [Visitor]: https://github.com/TheOctan/ -->
