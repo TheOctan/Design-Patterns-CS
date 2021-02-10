@@ -35,7 +35,7 @@ class Program
 	}
 }
 ```
-## Abstract template
+### Abstract template
 ```csharp
 public abstract class Weapon
 {
@@ -50,7 +50,7 @@ public abstract class Weapon
 	protected abstract void Shoot();
 }
 ```
-## Concrete template
+### Concrete template
 ```csharp
 public class Gun : Weapon
 {
