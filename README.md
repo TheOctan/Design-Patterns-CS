@@ -41,7 +41,7 @@
 <!-- [Adapter]: https://github.com/TheOctan/ -->
 <!-- [Bridge]: https://github.com/TheOctan/ -->
 <!-- [Composite]: https://github.com/TheOctan/ -->
-<!-- [Decorator]: https://github.com/TheOctan/ -->
+[Decorator]: https://github.com/TheOctan/Design-Patterns-CS/tree/master/Structural%20Patterns/Decorator
 <!-- [Facade]: https://github.com/TheOctan/ -->
 <!-- [Flyweight]: https://github.com/TheOctan/ -->
 <!-- [Proxy]: https://github.com/TheOctan/ -->
