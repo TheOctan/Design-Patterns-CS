@@ -46,7 +46,7 @@
 <!-- [Flyweight]: https://github.com/TheOctan/ -->
 <!-- [Proxy]: https://github.com/TheOctan/ -->
 <!-- [Chain of Responsibility]: https://github.com/TheOctan/ -->
-<!-- [Command]: https://github.com/TheOctan/ -->
+[Command]: https://github.com/TheOctan/Design-Patterns-CS/tree/master/Behavioral%20Patterns/Command
 <!-- [Interpreter]: https://github.com/TheOctan/ -->
 <!-- [Iterator]: https://github.com/TheOctan/ -->
 <!-- [Mediator]: https://github.com/TheOctan/ -->
