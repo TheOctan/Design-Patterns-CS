@@ -13,75 +13,90 @@
 >
 > * Когда надо поддерживать логгирование изменений в результате запросов. Использование логов может помочь восстановить состояние системы - для этого необходимо будет использовать последовательность запротоколированных команд.
 
-## Abstract example
+## Example
 ```csharp
 class Program
 {
-	static void Main(string[] args)
-	{
-		Invoker invoker = new Invoker();
-        Receiver receiver = new Receiver();
-		ConcreteCommand command = new ConcreteCommand(receiver);
+    static void Main(string[] args)
+    {
+        CommandStack stack = new CommandStack();
+        Player player = new Player();
 
-        invoker.SetCommand(command);
-        invoker.Run();
-	}
+        stack.ExecuteCommand(new HealthRewind(player));
+        stack.UndoLastCommand();
+    }
 }
 ```
 ### Receiver
 ```csharp
-public class Receiver
+public class Player
 {
-    public void Operation()
-    {}
+    private float health;
+
+    public Player(float startHealth)
+    {
+        health = startHealth;
+    }
+
+    public void AddHealth(float health)
+    {
+        this.health += health;
+
+        if(this.health < 0)
+            this.health = 0;
+    }
 }
 ```
 ### Abstract command
 ```csharp
-public abstract class Command
+public interface ICommand
 {
-    public abstract void Execute();
-    public abstract void Undo();
+    void Execute();
+    void Undo();
 }
 ```
 ### Concrete command
 ```csharp
-public class ConcreteCommand : Command
+public class HealthRewind : ICommand
 {
-    private readonly Receiver receiver;
+    private readonly Player player;
+    private float deltaHealth;
 
-    public ConcreteCommand(Receiver receiver)
+    public HealthRewind(Player player, float deltaHealth)
     {
-        this.receiver = receiver;
+        this.player = player;
+        this.deltaHealth = deltaHealth;
     }
 
-    public override void Execute()
+    public void Execute()
     {
-        receiver.Operation();
+        player.AddHealth(deltaHealth);
     }
- 
-    public override void Undo()
-    {}
+
+    public void Undo()
+    {
+        player.AddHealth(-deltaHealth);
+    }
 }
 ```
+### Invoker
 ```csharp
-public class Invoker
+public class CommandStack
 {
-    private Command command;
+    private Stack<ICommand> commandHistory = new Stack<ICommand>();
 
-    public void SetCommand(Command command)
-    {
-    	this.command = command;
-    }
-
-    public void Run()
+    public void ExecuteCommand(ICommand command)
     {
         command.Execute();
+        commandHistory.Push(command);
     }
 
-    public void Cancel()
+    public void UndoLastCommand()
     {
-        command.Undo();
+        if(commandHistory.Count <= 0)
+            return;
+        
+        commandHistory.Pop().Undo();
     }
 }
-
+```
