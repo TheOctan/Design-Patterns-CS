@@ -68,12 +68,12 @@ public class HealthRewind : ICommand
         this.deltaHealth = deltaHealth;
     }
 
-    public void Execute()
+    public override void Execute()
     {
         player.AddHealth(deltaHealth);
     }
 
-    public void Undo()
+    public override void Undo()
     {
         player.AddHealth(-deltaHealth);
     }
@@ -93,7 +93,7 @@ public class CommandStack
 
     public void UndoLastCommand()
     {
-        if(commandHistory.Count <= 0)
+        if(commandHistory.Count == 0)
             return;
         
         commandHistory.Pop().Undo();
