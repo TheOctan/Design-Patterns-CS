@@ -13,14 +13,14 @@
 ```csharp
 public class StateMachine
 {
-	public IState CurrentState { get; private set; }
+	public IState currentState;
 	private IState previousState;
 
 	private bool inTransition;
 
 	public void ChangeState(IState newState)
 	{
-		if(CurrentState == newState || inTransition)
+		if(currentState == newState || inTransition)
 			return;
 		
 		ChangeStateRoutine(newState);
@@ -36,10 +36,10 @@ public class StateMachine
 	{
 		inTransition = true;
 
-		CurrentState?.Exit();
+		currentState?.Exit();
 		previousState = currentState;
-		CurrentState = newState;
-		CurrentState?.Enter();
+		currentState = newState;
+		currentState?.Enter();
 		
 		inTransition = false;
 	}
