@@ -39,7 +39,7 @@
 <!-- [Prototype]: https://github.com/TheOctan/ -->
 <!-- [Singleton]: https://github.com/TheOctan/ -->
 <!-- [Adapter]: https://github.com/TheOctan/ -->
-<!-- [Bridge]: https://github.com/TheOctan/ -->
+[Bridge]: https://github.com/TheOctan/Design-Patterns-CS/tree/master/Structural%20Patterns/Bridge
 <!-- [Composite]: https://github.com/TheOctan/ -->
 [Decorator]: https://github.com/TheOctan/Design-Patterns-CS/tree/master/Structural%20Patterns/Decorator
 <!-- [Facade]: https://github.com/TheOctan/ -->
