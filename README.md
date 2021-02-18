@@ -55,4 +55,4 @@
 [State]: https://github.com/TheOctan/Design-Patterns-CS/tree/master/Behavioral%20Patterns/State
 [Strategy]: https://github.com/TheOctan/Design-Patterns-CS/tree/master/Behavioral%20Patterns/Strategy
 [Template Method]: https://github.com/TheOctan/Design-Patterns-CS/tree/master/Behavioral%20Patterns/Template%20Method
-<!-- [Visitor]: https://github.com/TheOctan/ -->
+[Visitor]: https://github.com/TheOctan/Design-Patterns-CS/tree/master/Behavioral%20Patterns/Visitor
