@@ -215,3 +215,38 @@ public class Unsubscriber<T> : IDisposable
 	}
 }
 ```
+## Преимущества и недостатки
+<table>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Издатель не зависит от конкретных классов подписчиков.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Вы можете подписывать и отписывать получателей на лету.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Реализует принцип открытости/закрытости.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/minus.png" alt="Minus" width="25">
+		</td>
+		<td>
+			Наблюдатели оповещаются в случайном порядке.
+		</td>
+	</tr>
+</table>
