@@ -97,3 +97,38 @@ public class SearchState : State
 	}
 }
 ```
+## Преимущества и недостатки
+<table>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Избавляет от множества больших условных операторов машины состояний.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Концентрирует в одном месте код, связанный с определённым состоянием.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Упрощает код контекста.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/minus.png" alt="Minus" width="25">
+		</td>
+		<td>
+			Может неоправданно усложнить код, если состояний мало и они редко меняются.
+		</td>
+	</tr>
+</table>
