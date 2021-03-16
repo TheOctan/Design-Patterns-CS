@@ -58,3 +58,54 @@ public class ConsolePrinter : IPrinter
 	}
 }
 ```
+## Преимущества и недостатки
+<table>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Горячая замена алгоритмов на лету.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Изолирует код и данные алгоритмов от остальных классов.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Уход от наследования к делегированию.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Реализует принцип открытости/закрытости.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/minus.png" alt="Minus" width="25">
+		</td>
+		<td>
+			Усложняет программу за счёт дополнительных классов.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/minus.png" alt="Minus" width="25">
+		</td>
+		<td>
+			Клиент должен знать, в чём разница между стратегиями, чтобы выбрать подходящую.
+		</td>
+	</tr>
+</table>
