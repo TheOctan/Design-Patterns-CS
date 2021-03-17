@@ -290,3 +290,54 @@ public struct PlayerStats
 	}
 }
 ```
+## Преимущества и недостатки
+<table>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Большая гибкость, чем у наследования.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Позволяет добавлять обязанности на лету.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Можно добавлять несколько новых обязанностей сразу.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Позволяет иметь несколько мелких объектов вместо одного объекта на все случаи жизни.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/minus.png" alt="Minus" width="25">
+		</td>
+		<td>
+			Трудно конфигурировать многократно обёрнутые объекты.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/minus.png" alt="Minus" width="25">
+		</td>
+		<td>
+			Обилие крошечных классов.
+		</td>
+	</tr>
+</table>
