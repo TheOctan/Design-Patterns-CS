@@ -70,7 +70,7 @@ public class Adaptee
 <table>
 	<tr>
 		<td>
-			<img src="../../Images/plus.png" alt="Plus" width="15">
+			<img src="../../Images/plus.png" alt="Plus" width="25">
 		</td>
 		<td>
 			Отделяет и скрывает от клиента подробности преобразования различных интерфейсов.
@@ -78,7 +78,7 @@ public class Adaptee
 	</tr>
 	<tr>
 		<td>
-			<img src="../../Images/minus.png" alt="Minus" width="15">
+			<img src="../../Images/minus.png" alt="Minus" width="25">
 		</td>
 		<td>
 			Усложняет код программы за счёт дополнительных классов.
