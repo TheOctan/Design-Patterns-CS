@@ -100,3 +100,38 @@ public class PushAttack : IAttack
 	}
 }
 ```
+## Преимущества и недостатки
+<table>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Позволяет строить платформо-независимые программы.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Скрывает лишние или опасные детали реализации от клиентского кода.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/plus.png" alt="Plus" width="25">
+		</td>
+		<td>
+			Реализует принцип открытости/закрытости.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../../Images/minus.png" alt="Minus" width="25">
+		</td>
+		<td>
+			Усложняет код программы за счёт дополнительных классов.
+		</td>
+	</tr>
+</table>
